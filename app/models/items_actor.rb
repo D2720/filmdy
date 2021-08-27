@@ -1,0 +1,2 @@
+class ItemsActor < ApplicationRecord
+end

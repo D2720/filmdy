@@ -1,0 +1,2 @@
+class ItemsDirector < ApplicationRecord
+end

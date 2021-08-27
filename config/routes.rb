@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/index'
+  get 'items/show'
   get 'users/show'
   devise_for :users
   root to: 'page#index'
