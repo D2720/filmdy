@@ -1,0 +1,43 @@
+<header class="header-container">
+	<div class="main-header">
+		<%= link_to(root_path, class: "logo") do %>
+			<h1>FILMDY</h1>
+		<% end %>
+		<ul class="tabbed-primary-navigation">
+			<li class="navigation-tab navigation-menu"><a href="">Trang chủ</a></li>
+			<li class="navigation-tab"><a href="">Phim T.hành</a></li>
+			<li class="navigation-tab"><a href="">Mới & Phổ biến</a></li>
+			<li class="navigation-tab"><a href="">Thể loại</a></li>
+			<li class="navigation-tab"><a href="">Danh sách của tôi</a></li>
+		</ul>
+		<div class="secondary-navigation">
+			<div class="nav-element">
+				<div class="searchBox">
+					<label for="search" class="searchTab">
+						<span class="icon-search"><%= fa_icon("search") %></span>
+					</label>
+					<div class="searchInput">
+						<input type="text" name="search" id="search" class="search-content" placeholder="Phim, diễn viên, thể loại">
+					</div>
+				</div>
+			</div>
+			<div class="nav-element">
+				<div class="notification-menu">
+					<span class="icon-button-notification"><%= fa_icon("bell") %></span>
+				</div>
+			</div>
+			<div class="nav-element">
+				<div class="account-menu-item">
+					<%= link_to(profile_path) do %>
+						<span class="profile-link">
+							<img class="profile-icon" src="">
+						</span>
+					<% end %>
+					<span class="caret">
+						<%= fa_icon("caret-down") %>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
