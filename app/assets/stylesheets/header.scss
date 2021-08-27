@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+.header-container {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	width: 100%;
+	height: 68px;
+	padding: 0 4%;
+	background-image: linear-gradient(#222, transparent);
+}
+.main-header {
+	position: relative;
+	display: flex;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	align-items: center;
+	font-size: 1.0rem;
+	transition: background-color .4s;
+	-webkit-box-align: center;
+	margin: 0;
+	padding: 0;
+}
+.logo {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+  margin-right: 5px;
+  text-decoration: none;
+  font-family: 'Rye', cursive;
+  color: #e50914;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+.tabbed-primary-navigation {
+	display: flex;
+	position: relative;
+	list-style-type: disc;
+	margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+  font-size: 14px;
+  font-family: Arial;
+  color: #fff;
+  font-weight: normal;
+
+  .navigation-tab:not(:first-child) {
+  	margin-left: 18px;
+  }
+
+  .navigation-tab {
+  	display: block;
+
+  	a {
+  		color: #e5e5e5;
+  	}
+  }
+
+  .navigation-tab.navigation-menu {
+  	font-weight: bold;
+  	color: #fff;
+  }
+}
+.secondary-navigation {
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	position: absolute;
+  right: 0%;
+  top: 0;
+  height: 100%;
+  color: #fff;
+
+  .nav-element:not(:last-child) {
+  	margin-right: 18px;
+  }
+}
+.searchBox {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 8px;
+	border: 1px solid #000;
+	height: 40px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	color: #fff;
+	font-size: 16px;
+	border: 1px solid #fff;
+
+	.searchInput {
+		height: 100%;
+
+		.search-content {
+			display: inline-block;
+			height: 100%;
+			width: 250px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			padding-left: 15px; 
+			font-size: 15px;
+		}
+	}
+}
