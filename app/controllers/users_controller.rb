@@ -6,9 +6,9 @@ class UsersController < ApplicationController
   end
 
   def index
-  	@users = User.all
-  	mails = @users.map(&:email)
-    render component: 'Users', props: { mails: mails }
+  	# @users = User.all
+  	# mails = @users.map(&:email)
+   #  render component: 'Users', props: { mails: mails }
   end
 
   private
